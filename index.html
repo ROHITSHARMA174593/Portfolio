@@ -13,7 +13,10 @@
 <body class="bg-[#111111] text-white font-['Nunito']">
     <section class="flex flex-col justify-between h-screen">
         <header class="flex items-center justify-between px-6 mt-5 max-w-screen-2xl z-10 pointer-events-none">
-            <svg xmlns="http://www.w3.org/2000/svg" id="my-svg" width="90" height="70" viewBox="0 0 256 256">
+            <div class="lg:w-[4vw] w-[11vw]">
+                <img src="./assets/images/header-logo.svg" alt="">
+            </div>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" id="my-svg" width="90" height="70" viewBox="0 0 256 256">
                 <path fill="#FFF" d="M53.2 145.1l81.9-71.7h-34.3L19 145.1l102.8 90h34.3l-102.9-90"></path>
                 <g fill="#FFF">
                     <path
@@ -31,7 +34,7 @@
                         </path>
                     </g>
                 </g>
-            </svg>
+            </svg> -->
             <div class="flex gap-6 pointer-events-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -73,7 +76,7 @@
             </div>
 
         </header>
-        <div class="absolute inset-0 hidden md:block" id="wrapper-canvas">
+        <div class="absolute inset-0 hidden md:block">
             <!-- Screen Animation isko ek ID de rakhi hai aur iss ID ka access Matter.js file ke ander hai jaha per pure animation ka code likha hua hai-->
             <!-- Iss code ko run karne ke liye kuch CDNs bhi link karni hongi-->
         </div>
@@ -141,7 +144,8 @@
                     </h1>
                     <p class="pointer-events-none  text=[22px] font-['merriweather'] italic mb-8">MERN Stack Developer
                     </p>
-                    <button
+                    <a href="#aboutMe">
+                        <button
                         class="bg-[#4595eb]  py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-300 group">
                         About Me
 
@@ -162,6 +166,7 @@
                             </g>
                         </svg>
                     </button>
+                    </a>
                 </div>
             </div>
 
@@ -200,7 +205,7 @@
                     </a>
                 </li>
                 <li class="hover:text-white">
-                    <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank">
+                    <a href="mailto:rohitkulchaniya4369@gmail.com" target="_blank">
                         <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path fill="currentColor"
                                 d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
@@ -232,9 +237,9 @@
 
 
 
-    </section>
+    </section><!--? This is the Navbar and Hero Section -->
 
-    <div class="flex flex-row items-center justify-center h-[700px] max-w-screen-2xl gap-8 mx-3 mb-8">
+    <div id="aboutMe" class="flex flex-row items-center justify-center h-[700px] max-w-screen-2xl gap-8 mx-3 mb-8">
         <div class="flex flex-col items-start justify-center pl-10 mr-12 w-[92%] h-[98%]  my-auto sm:pr-14 sm:w-[42]">
             <h1 class="mb-4 ml-0 text-[28px] font-['Spartan'] sm:ml-8">About Me</h1>
             <p class="ml-0 font-['Nunito'] text-sm sm:text-lg sm:ml-8">I help business owners and busy web developers to
@@ -336,29 +341,37 @@
         <div class="w-[68%] h-[98%] my-auto hidden items-center justify-center  sm:flex">
             <img src="./assets/images/coder.svg" alt="">
         </div>
-    </div> <!-- ye About Me ka page hai complete-->
-
+    </div> <!--? This is About Me Page -->
 
     <section class="max-w-screen-xl mx-auto px-4 relative mt-6 sm:mt-6">
         <h2 class="text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 border-b-4 mb-2 sm:mb-3 md:mb-6 lg:mb-7 border-[#1788ae] mx-auto w-max text-center text-[#1788ae]">Latest Work</h2>
 
   <!--! First 2 Project -->
       
-        <div class="flex flex-col min-h-[45vw] w-[100%] mx-auto items-center justify-center my-32 overflow-x-hidden">
+        <div class="flex flex-col min-h-[45vw] w-[100%] mx-auto items-center justify-center py-32 overflow-x-hidden">
             <div class="flex flex-col sm:flex-row w-full">
 
                 <!-- First Project -->
                 <div class="flex flex-col w-full md:w-1/2 items-center justify-center my-7 sm:my-7 relative lg:mr-10">
-                    <a href="#" class="w-full flex items-center justify-center">
+                    <a href="#" class="w-full flex items-center justify-center relative">
+                        <!-- Laptop Image Wrapper -->
                         <div class="relative group w-[90%] lg:w-[100%]">
-                           
-                            <img class="w-full relative drop-shadow-[0_0_45px_rgba(59,130,245,0.8)] " src="./assets/mockups/macbook 1.png" alt=""/>
-                            <img class="absolute bottom-8 left-[9.8vh] h-[38vh] w-[28vw] " src="https://img.freepik.com/premium-photo/3d-render-online-shopping-with-laptop_313044-71.jpg" alt="">
+                            <!-- Laptop Image -->
+                            <img class="w-full relative drop-shadow-[0_0_45px_rgba(59,130,245,0.8)]" src="./assets/mockups/macbook 1.png" alt="Laptop"/>
+                            <!-- Second Image Positioned to Fit Inside Laptop Screen -->
+                            <div class="absolute top-[2%] left-[12%] w-[76%] h-[87%] rounded-sm">
+                                <img
+                                    class="w-full h-full object-cover"
+                                    src="https://img.freepik.com/premium-photo/3d-render-online-shopping-with-laptop_313044-71.jpg"
+                                    alt="Content Inside Laptop"
+                                />
+                            </div>
                         </div>
                     </a>
+                    
+                    
                     <div class="flex flex-col px-6 lg:px-12 mt-16">
-                        <h1 class="text-2xl text-[#fc815c]">Your Project Name</h1>
-                        <p class="pb-4">[company name]</p>
+                        <h1 class="text-2xl text-[#fc815c]">E-Commerce Website</h1>
                         <p>Being a lead developer revamped the site to a highly responsive, and interactive website.
                             Created new features and pages. Work as a team with Product Manager and UX Designer.</p>
                     </div>
@@ -366,8 +379,8 @@
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#HTML</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#CSS</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#JavaScript</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#React</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#SQL</p>
+                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Vite</p>
+                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#npm</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Terminal</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Tailwind</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Github</p>
@@ -376,27 +389,26 @@
 
                 <!-- Second Project -->
                 <div class="flex flex-col w-full md:w-1/2 items-center justify-center my-7 sm:my-7 relative lg:ml-20">
-                    <a href="#" class="w-full flex items-center justify-center">
+                    <a href="#" class="w-full flex items-center justify-center relative">
                         <div class="relative group w-[90%] lg:w-[100%]">
-                            <img class="w-full relative drop-shadow-[0_0_45px_rgba(59,130,245,0.8)] " src="./assets/mockups/macbook 1.png" alt="">
-                            <img class="absolute bottom-8 left-[9.8vh] h-[38vh] w-[28vw] " src="https://www.jamfal.com/k/download/screen/2021/202107/kashipara.com_atm-4-png.png" alt="">
+                            <img class="w-full relative drop-shadow-[0_0_45px_rgba(59,130,245,0.8)]" src="./assets/mockups/macbook 1.png" alt="">
+                        </div>
+                        <div class="absolute top-[2%] left-[12%] w-[76%] h-[87%] rounded-sm">
+                            <img class="w-full h-full object-cover" src="https://www.jamfal.com/k/download/screen/2021/202107/kashipara.com_atm-4-png.png" alt="">
                         </div>
                     </a>
                     <div class="flex flex-col px-6 lg:px-12 mt-16">
-                        <h1 class="text-2xl text-[#fc815c]">Your Project Name</h1>
-                        <p class="pb-4">[company name]</p>
+                        <h1 class="text-2xl text-[#fc815c]">Bank Managment System</h1>
                         <p>Being a lead developer revamped the site to a highly responsive, and interactive website.
                             Created new features and pages. Work as a team with Product Manager and UX Designer.</p>
                     </div>
                     <div class="skills grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 mt-6">
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#HTML</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#CSS</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#JavaScript</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#React</p>
+                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Java</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#SQL</p>
+                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#MySQL</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Terminal</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Tailwind</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Github</p>
+                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Frames</p>
+                        
                     </div>
                 </div>
             </div>
@@ -404,19 +416,20 @@
 
 
         <!--! Second 2 Project -->
-            <div class="flex flex-col min-h-[45vw] w-[95%] mx-auto items-center justify-center my-32 overflow-x-hidden">
+            <div class="flex flex-col min-h-[45vw] w-[95%] mx-auto items-center justify-center py-32 overflow-x-hidden">
             <div class="flex flex-col sm:flex-row w-full">
                 <!-- First Project -->
                 <div class="flex flex-col w-full md:w-1/2 items-center justify-center my-7 sm:my-7 relative lg:mr-20">
-                    <a href="#" class="w-full flex items-center justify-center">
+                    <a href="#" class="w-full flex items-center justify-center relative">
                         <div class="relative group w-[90%] lg:w-[100%]">                      
-                            <img class="w-full relative drop-shadow-[0_0_45px_rgba(59,130,245,0.8)] " src="./assets/mockups/macbook 1.png" alt="">
-                            <img class="absolute bottom-8 left-[8.5vh] h-[34vh] w-[26vw] " src="https://cdn.prod.website-files.com/62fa51cad42badfa9674d967/64da48996e6f0b5adbdc6c69_WBStQcr5_Jke33-gMUJbqvo3rgOkVwILSfbiob4e_ws.webp" alt="">
+                            <img class="w-full relative drop-shadow-[0_0_45px_rgba(59,130,245,0.8)]" src="./assets/mockups/macbook 1.png" alt="">
+                        </div>
+                        <div class="absolute top-[2%] left-[12%] w-[76%] h-[87%] rounded-sm">
+                            <img class="w-full h-full object-cover" src="https://cdn.prod.website-files.com/62fa51cad42badfa9674d967/64da48996e6f0b5adbdc6c69_WBStQcr5_Jke33-gMUJbqvo3rgOkVwILSfbiob4e_ws.webp" alt="">
                         </div>
                     </a>
                     <div class="flex flex-col px-6 lg:px-12 mt-16">
-                        <h1 class="text-2xl text-[#fc815c]">Your Project Name</h1>
-                        <p class="pb-4">[company name]</p>
+                        <h1 class="text-2xl text-[#fc815c]">Sundown Studio</h1>
                         <p>Being a lead developer revamped the site to a highly responsive, and interactive website.
                             Created new features and pages. Work as a team with Product Manager and UX Designer.</p>
                     </div>
@@ -424,20 +437,21 @@
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#HTML</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#CSS</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#JavaScript</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#React</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#SQL</p>
+                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Gsap</p>
                         <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Terminal</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Tailwind</p>
-                        <p class="grid place-items-center px-3 py-2 border-2 border-white rounded-lg">#Github</p>
+                        
                     </div>
                 </div>
 
                 <!-- Second Project -->
                 <div class="flex flex-col w-full md:w-1/2 items-center justify-center my-7 sm:my-7 relative lg:ml-20">
-                    <a href="#" class="w-full flex items-center justify-center">
+                    <a href="#" class="w-full flex items-center justify-center relative">
                         <div class="relative group w-[90%] lg:w-[100%]">
-                           
-                            <img class="w-full relative drop-shadow-[0_0_45px_rgba(59,130,245,0.8)] " src="./assets/mockups/macbook 1.png" alt="">
+                            <img class="w-full relative drop-shadow-[0_0_45px_rgba(59,130,245,0.8)]" src="./assets/mockups/macbook 1.png" alt="">
+                        </div>
+                        <div class="absolute top-[2%] left-[12%] w-[76%] h-[87%] rounded-sm">
+                            <!--add an image for screen-->
+                            <!--add this class =class="w-full h-full object-cover" -->
                         </div>
                     </a>
                     <div class="flex flex-col px-6 lg:px-12 mt-16">
@@ -467,8 +481,21 @@
 
 
 
-    <section class="w-full">
-
+    <section class="w-full h-[65vh] flex items-center justify-center border-t-2 border-white">
+        <div class="w-[45%] h-[55vh]  flex flex-col items-center justify-center">
+            <div class="w-[5vw] md:w-[8vw]">
+                <img src="./assets/images/name-logo2.svg" alt="">
+            </div>
+            <div class="text-white font-bold text-[1.1rem] py-6 flex flex-row gap-14">
+                <a href="https://twitter.com/rohiSh28051684">Twitter</a>
+                <a href="https://linkedin.com/in/Rohit Sharma">LinkedIn</a>
+                <a href="">Github</a>
+                <a href="mailto:rohitkulchaniya4369@gmail.com">Gmail</a>
+            </div>
+            <div class="text-white font-bold text-[15px]">
+                <p>&copy; 2025 Rohit Sharma </p>
+            </div>
+        </div>
     </section>
 
 

@@ -11,6 +11,7 @@
 </head>
 
 <body class="bg-[#111111] text-white font-['Nunito']">
+    
     <section class="flex flex-col justify-between h-screen">
         <header class="flex items-center justify-between px-6 mt-5 max-w-screen-2xl z-10 pointer-events-none">
             <div class="lg:w-[4vw] w-[11vw]">
@@ -245,7 +246,7 @@
             <p class="ml-0 font-['Nunito'] text-sm sm:text-lg sm:ml-8">I help business owners and busy web developers to
                 design & develop creative websites that fits their vision and attracts the visitors to stay for ever.
                 Technologies and tools that I use to create such awesome websites.</p>
-            <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6 mx-2">
+            <div class="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6 mx-2 lg:pl-5">
                 <p
                     class="flex items-center justify-center font-['Nunito'] px-12 py-[4px] sm:px-6 md:px-8 border border-gray-600 rounded-2xl text-[15px] sm:text-[14px]">
                     #HTML</p>
@@ -342,6 +343,11 @@
             <img src="./assets/images/coder.svg" alt="">
         </div>
     </div> <!--? This is About Me Page -->
+
+
+    
+
+<!--? ____________________________ START ____________________________ MIDDLE Page _________________________________ START _____________________________ -->
 
     <section class="max-w-screen-xl mx-auto px-4 relative mt-6 sm:mt-6">
         <h2 class="text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 border-b-4 mb-2 sm:mb-3 md:mb-6 lg:mb-7 border-[#1788ae] mx-auto w-max text-center text-[#1788ae]">Latest Work</h2>
@@ -477,16 +483,42 @@
         <!--! Vertical Line  middle of the Page-->
         <div class=" w-[2px] bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2 hidden sm:block"></div>
     </section>
+<!--? ___________________________ END _____________________________ MIDDLE Page ____________________________ END __________________________________ -->
 
 
 
 
-    <section class="w-full h-[65vh] flex items-center justify-center border-t-2 border-white">
-        <div class="w-[45%] h-[55vh]  flex flex-col items-center justify-center">
-            <div class="w-[5vw] md:w-[8vw]">
+    <!--? ____________________________ START ____________________________ Login Page _________________________________ START _____________________________ -->
+    <section class="flex items-center justify-center h-[85vh] lg:h-[123vh] border-t-2 border-white  w-full">
+        <form class="boxOnlyName  bg-[#282829] w-[93vw] lg:w-[55vw] lg:h-[100vh] h-[80vh]  p-5 lg:p-8 rounded-lg " netlify name="contactUS">
+            <p class="text-[#9998a0] text-[3vh] lg:text-[1.2rem] font-bold ">Get In Touch </p>
+            <h1 class="text-5xl lg:text-7xl font-extrabold pt-1 lg:pt-3">Contact.</h1>
+            <p class="text-[#9998a0] pt-3 lg:pt-8 text-[3vh]">Your Name</p>
+            <input type="text" placeholder="What's Your Name?" name="name" class="w-[100%] h-12 rounded-lg px-5 lg:px-7 bg-[#313a48] border-1 mt-1 lg:mt-2 text-[3vh]">
+            <p class="text-[#9998a0] pt-3 lg:pt-5 text-[3vh]">Your Email</p>
+            <input type="text" placeholder="What's Your Email?" name="name" class="w-[100%] h-12 rounded-lg px-5 lg:px-7 bg-[#313a48] border-1 mt-1 lg:mt-2 text-[3vh]">
+            <p class="text-[#9998a0] pt-5 lg:pt-8 text-[3vh]">Your Message</p>
+            <textarea name="message" id="message"  class="bg-[#313a48] w-[100%] h-[18vh] lg:h-[25vh] p-3 mt-1 lg:mt-2 rounded-lg "></textarea>
+
+            <div>
+                <button class="px-12 py-2 mt-4 lg:mt-8 w-[100%] bg-[#105e79] text-white font-bold text-3xl">Send</button>
+            </div>
+            
+        </form>
+    </section>
+
+   
+    <!--? ___________________________ END _____________________________ Login Page ____________________________ END __________________________________ -->
+
+
+
+<!--? ____________________________________________________________ Footer ___________________________________________________________________-->
+    <section class="w-full lg:h-[55vh] h-[35vh] flex items-center justify-center border-t-2 border-white">
+        <div class="w-[45%] h-[50vh]  flex flex-col items-center justify-center">
+            <div class="w-[15vw] md:w-[10vw]">
                 <img src="./assets/images/name-logo2.svg" alt="">
             </div>
-            <div class="text-white font-bold text-[1.1rem] py-6 flex flex-row gap-14">
+            <div class="text-white font-bold text-[1.1rem] py-6 flex flex-row gap-10 lg:gap-14">
                 <a href="https://twitter.com/rohiSh28051684">Twitter</a>
                 <a href="https://linkedin.com/in/Rohit Sharma">LinkedIn</a>
                 <a href="">Github</a>
@@ -499,9 +531,5 @@
     </section>
 
 
-
-
-
 </body>
-
 </html>
